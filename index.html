@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,195 +8,228 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d1e675940e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-------------header----------->
     <div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Frontend Developer</p>
-            <h1>Hi, I'm <span>Akshay Kumar</span></h1>
-        </div>
-    </div>
-</div>
+        <div class="container">
+            <nav>
+                <img src="images/logo.png.png" class="logo">
 
-<!-------------about----------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p> I am passionate about creating robust and user-friendly web applications. 🌍Proficient in front-end technologies like HTML, CSS, JavaScript, and frameworks such as React js.</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('Education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Frontend Developer</span><br>Designing Web-applications</li>
-                        <li><span>Web Development</span><br> Web app Development</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="Experience">
-                    <ul>
-                        <li><span>2023jul-2023sept</span><br>Frontend Development Internship at Varcon's technologies Company</li>
-                        <li><span>2025 Feb- Current</span><br> Desktop Support Engineer</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="Education">
-                    <ul>
-                        <li><span>2020-2024</span><br>Bacholar of Engineering(ISE) from Dayanand Sagar Institution</li>
-                        <li><span>2020</span><br> PUC from National College</li>
-                         <li><span>2018</span><br> SSLC from Y A S National School</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                <!-- Hamburger icon for opening menu -->
+                <i class="fa-solid fa-bars" id="menu-icon" onclick="openmenu()"></i>
 
-    </div>
-</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
-<!-------------services----------->
-<div id="Services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Website Development</h2>
-                <p>I create websites based on your ready-made design.whether it's landing page ,or a 
-                business card website, I will make it look great and work smoothly on any device.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-pen-nib"></i>
-                <h2>Web Design</h2>
-                <p>I can design your website from scratch. I create modern,
-                simple,and user-friendly designs that match your brand and goals</p>
-                <a href="#">Learn more</a>
+                    <!-- Close icon inside menu -->
+                    <i class="fa-solid fa-xmark" id="close-icon" onclick="closemenu()"></i>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Akshay Kumar</span></h1>
             </div>
         </div>
     </div>
-</div>
 
-<!-------------portfolio----------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you to the talented people around the world.
-                        Download it from play store.</p>
-                    <a href="#"><i class="fa-regular fa-paper-plane"></i></a>
+    <!-------------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" class="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am passionate about creating robust and user-friendly web applications. 🌍Proficient in
+                        front-end technologies like HTML, CSS, JavaScript, and frameworks such as React js.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Developer</span><br> Designing Web-applications</li>
+                            <li><span>Web Development</span><br> Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023 jul - 2023 sept</span><br>Frontend Development Internship at Varcon's
+                                technologies Company</li>
+                            <li><span>2025 Feb - Current</span><br> Desktop Support Engineer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Bacholar of Engineering(ISE) from Dayanand Sagar Institution
+                            </li>
+                            <li><span>2020</span><br> PUC from National College</li>
+                            <li><span>2018</span><br> SSLC from Y A S National School</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="work">
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3>Online Shopping App</h3>
-                    <p>The app connects you to the talented people around the world.
-                        Download it from play store.</p>
-                    <a href="#"><i class="fa-regular fa-paper-plane"></i></a>
+
+        </div>
+    </div>
+
+    <!-------------services----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Website Development</h2>
+                    <p>I create websites based on your ready-made design.whether it's landing page ,or a
+                        business card website, I will make it look great and work smoothly on any device.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Web Design</h2>
+                    <p>I can design your website from scratch. I create modern,
+                        simple,and user-friendly designs that match your brand and goals</p>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
     </div>
-    
-</div>
-<!------------------contact---------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left"> 
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
-                <p><i class="fa-solid fa-square-phone-flip"></i>0123456789</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/akshay.akshu.94064/about"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://x.com/Akshu1520"><i class="fa-brands fa-twitter-square"></i></a>
-                    <a href="https://www.instagram.com/ak_._akshu?igsh=MWFyZ3draHg5OG14dw=="><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/akshay-kumar-r-s-0ab282256"><i class="fa-brands fa-linkedin"></i></a>
+
+    <!-------------portfolio----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-regular fa-paper-plane"></i></a>
+                    </div>
                 </div>
-                <a href="images/Akshay-Kumar-R-S-FlowCV-Resume-20241003 (2) (3).pdf" download class="btn btn2">Download CV</a>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-regular fa-paper-plane"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Mail" required>
-                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                    <button type="Submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+            <a href="#" class="btn">See more</a>
+        </div>
+
+    </div>
+    <!------------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/akshay.akshu.94064/about"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/Akshu1520"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/ak_._akshu?igsh=MWFyZ3draHg5OG14dw=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/akshay-kumar-r-s-0ab282256"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Akshay-Kumar-R-S-FlowCV-Resume-20241003 (2) (3).pdf" download
+                        class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script>
-    var tablinks=document.getElementsByClassName("tab-links");
-     var tabcontents=document.getElementsByClassName("tab-contents");
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");     
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");     
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
 
-}
+        }
 
-</script>
+    </script>
 
-<script>
-    var sidemeu=document.getElementById("sidemenu");
+    <script>
+        function openmenu() {
+            document.getElementById("sidemenu").style.right = "0";
+        }
 
-    function openmenu(){
-        sidemeu.style.right="0"
-    }
-    function closemenu(){
-        sidemeu.style.right="-200px"
-    }
-</script>
+        function closemenu() {
+            document.getElementById("sidemenu").style.right = "-200px";
+        }
 
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwFyHYQM2DgFDCSI1_2wyc3oWImYYTp89lIP54qmPF5FGwvFrcMzoSLdvoSQoJPdUYK/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg= document.getElementById("msg")
+        // Smooth scrolling for sidemenu links
+        document.querySelectorAll('#sidemenu a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML="Message sent successfully"
-        setTimeout(function(){
-            msg.innerHTML = ""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+
+                    // Close menu after clicking on small screens
+                    if (window.innerWidth < 768) {
+                        closemenu();
+                    }
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwFyHYQM2DgFDCSI1_2wyc3oWImYYTp89lIP54qmPF5FGwvFrcMzoSLdvoSQoJPdUYK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
+
 </html>
