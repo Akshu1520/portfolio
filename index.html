@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshay Kumar — DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Grid background -->
+  <div class="grid-bg"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-prefix">&gt;_</span>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" class="nav__link">about</a></li>
+      <li><a href="#skills" class="nav__link">skills</a></li>
+      <li><a href="#projects" class="nav__link">projects</a></li>
+      <li><a href="#experience" class="nav__link">experience</a></li>
+      <li><a href="#contact" class="nav__link">contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__terminal">
+      <div class="terminal__bar">
+        <span class="terminal__dot terminal__dot--red"></span>
+        <span class="terminal__dot terminal__dot--yellow"></span>
+        <span class="terminal__dot terminal__dot--green"></span>
+        <span class="terminal__title">bash ~ akshay@devops:~$</span>
+      </div>
+      <div class="terminal__body">
+        <p class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd" id="typeCmd"></span><span class="terminal__cursor">█</span></p>
+        <div class="terminal__output" id="terminalOutput"></div>
+      </div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Hello, World. I'm</p>
+      <h1 class="hero__name">Akshay<br/><span class="hero__name--accent">Kumar</span></h1>
+      <p class="hero__title">DevOps <span class="hero__title-bar">|</span> Cloud Architect <span class="hero__title-bar">|</span> Linux Administrator</p>
+      <p class="hero__sub">Building the pipelines that ship the future.</p>
+      <div class="hero__ctas">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num" data-target="6">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">Month Exp.</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num" data-target="1">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">Pipelines Built</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num" data-target="3">0</span><span class="stat__plus">.</span><span class="stat__decimal"></span>
+          <span class="stat__label">FrontEnd Projects</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">01 // about</span>
+        <h2 class="section__title">Who I Am</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p>I'm a <strong>DevOps Engineer</strong> I am a passionate DevOps enthusiast with a strong foundation in cloud computing, automation, and system administration. I have been completed devops course and works with tools like Amazon Web Services, Linux, Docker, Kubernetes, Terraform, and Jenkins.</p>
+          <p>The knowledge of AWS cloud services including<em>EC2, S3, VPC, IAM, and CloudWatch.Familiar with cloud deployment, monitoring, and basic security best practices.</p>
+          <p>knowledge in Linux Administration, including system configuration, user management, file system handling, and basic networking. Skilled in shell scripting and troubleshooting, with a strong interest in managing and automating Linux-based environments. <code>Linux</code> command.</p>
+        </div>
+        <div class="about__card-stack">
+          <div class="about__card about__card--1">
+            <span class="about__card-icon">☁</span>
+            <h3>Cloud Native</h3>
+            <p>AWS</p>
+          </div>
+          <div class="about__card about__card--2">
+            <span class="about__card-icon">⎈</span>
+            <h3>Kubernetes</h3>
+           
+          </div>
+          <div class="about__card about__card--3">
+            <span class="about__card-icon">⚙</span>
+            <h3>Automation</h3>
+            <p>Terraform, Ansible, Python-first</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+  <h2 class="section-title"><span>skills</span></h2>
+
+  <div class="skills-container">
+
+    <!-- Skill Item -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg">
+      <h3>AWS</h3>
+      <div class="progress-bar">
+        <div class="progress aws"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
+      <h3>Linux</h3>
+      <div class="progress-bar">
+        <div class="progress linux"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
+      <h3>Docker</h3>
+      <div class="progress-bar">
+        <div class="progress docker"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg">
+      <h3>Kubernetes</h3>
+      <div class="progress-bar">
+        <div class="progress k8s"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+      <h3>Git</h3>
+      <div class="progress-bar">
+        <div class="progress git"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+      <h3>GitHub</h3>
+      <div class="progress-bar">
+        <div class="progress git"></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg">
+      <h3>Jenkins</h3>
+      <div class="progress-bar">
+        <div class="progress jenkins"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">03 // projects</span>
+        <h2 class="section__title">Featured Work</h2>
+      </div>
+
+      <div class="projects__grid">
+
+        <article class="project-card project-card--featured">
+          <div class="project-card__meta">
+            <span class="project-card__tag">HTML · CSS· JAVASCRIPT</span>
+            <span class="project-card__status project-card__status--live"></span>
+          </div>
+          <h3 class="project-card__title">Online Shopping Website<br>FrontEnd</br></h3>
+          <p class="project-card__desc">Built a fully responsive online shopping website frontend using HTML, CSS, and JavaScript.
+Designed visually appealing product pages with categories, filters, and detailed product views.
+Developed a modern and responsive eCommerce frontend improving user experience and accessibility.</p>
+          
+          <div class="project-card__footer">
+            <div class="project-card__tech"><code>HTML</code><code>CSS</code><code>JavaScript</code></div>
+            <a href="https://shopwell-com.netlify.app/" class="project-card__link">View →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__meta">
+            <span class="project-card__tag">FrontEnd</span>
+            <span class="project-card__status project-card__status--live">● Live</span>
+          </div>
+          <h3 class="project-card__title">Expense tracker</h3>
+          <p class="project-card__desc">It provides a convenient and user-friendly interface for tracking, categorizing, and analyzing financial transactions</p>
+          <div class="project-card__footer">
+            <div class="project-card__tech"><code>HTML</code><code>css</code><code>javascript</code><code>sql</code></div>
+            <a href="#" class="project-card__link">View →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__meta">
+            <span class="project-card__tag">Terraform · Cost Optimization</span>
+            <span class="project-card__status">● Completed</span>
+          </div>
+          <h3 class="project-card__title">Cloud FinOps Dashboard</h3>
+          <p class="project-card__desc">Implemented automated cloud cost optimization using spot instances, rightsizing recommendations, and scheduled scaling — saving $520K annually across 3 AWS accounts.</p>
+          <div class="project-card__footer">
+            <div class="project-card__tech"><code>Terraform</code><code>Lambda</code><code>Grafana</code></div>
+            <a href="#" class="project-card__link">View →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__meta">
+            <span class="project-card__tag">Security · DevSecOps</span>
+            <span class="project-card__status project-card__status--live">● Live</span>
+          </div>
+          <h3 class="project-card__title">DevSecOps Automation Suite</h3>
+          <p class="project-card__desc">Integrated SAST, DAST, SCA, and container scanning into CI pipelines with Vault-managed secrets and OPA policy enforcement across all microservices.</p>
+          <div class="project-card__footer">
+            <div class="project-card__tech"><code>Vault</code><code>Trivy</code><code>OPA</code><code>Snyk</code></div>
+            <a href="#" class="project-card__link">View →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">04 // experience</span>
+        <h2 class="section__title">Career Pipeline</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__line"></div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Desktop Support Engineer</h3>
+                <p class="timeline__company">Dynacons System & Solutions</p>
+              </div>
+              <span class="timeline__date">FEB 2025 - FEB 2026</span>
+            </div>
+            <ul class="timeline__list">
+              <li>•Provided end-user technical support for running both Windows (10/11) and Linux(Ubuntu, RHEL) operating systems.</li>
+              <li>•Resolved daily issues related to networking (TCP/IP, DNS, DHCP), printers, and remote access tools (RDP, SSH, AnyDesk).</li>
+              <li>•Managed user accounts, profiles, and permissions using Active Directory (Windows) and command-line user management (Linux).</li>
+              <li>Assisted users with system-related queries and ensured timely issue resolution.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">DevOps Intern</h3>
+                <p class="timeline__company"> Besant Technologies</p>
+              </div>
+              <span class="timeline__date">March 2026 – AUG 2026</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Gained hands-on experience in Linux, AWS, and DevOps tools including Docker, Terraform, Jenkins, and Git, focusing on CI/CD and infrastructure automation </li>
+              <li>Worked on real-time scenarios involving cloud deployments and automation, which strengthened my practical understanding of DevOps practices and contributed to my transition into a Cloud Engineer role.</li>
+              
+            </ul>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <!-- Certifications -->
+      <div class="certs">
+        <h3 class="certs__title">Certifications</h3>
+        <div class="certs__grid">
+          <div class="cert-badge">
+            <span class="cert-badge__icon">★</span>
+            <span class="cert-badge__name">Introduction to IOT - <code>Cisco</code></span>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__icon">★</span>
+            <span class="cert-badge__name">C++,C Certifications - <code>Cisco</code></span>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__icon">★</span>
+            <span class="cert-badge__name">Full Stack Web Developer Internship Certification - <code>Varcons Technologies</code></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">05 // contact</span>
+        <h2 class="section__title">Let's Connect</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="contact__tagline">Open to new opportunities, consulting, and interesting infrastructure challenges. Let's build something reliable together.</p>
+          <div class="contact__links">
+            <a href="akshay:akakshay1520@gmail.com" class="contact__link">
+              <span class="contact__link-icon">✉</span>
+              <span>akshay@gmail.com</span>
+            </a>
+            <a href="https://github.com/Akshu1520" target="_blank" class="contact__link">
+              <span class="contact__link-icon">⌥</span>
+              <span>github.com/Akshu1520</span>
+            </a>
+            <a href="https://www.linkedin.com/in/akshay-kumar-r-s-0ab282256" target="_blank" class="contact__link">
+              <span class="contact__link-icon">in</span>
+              <span>linkedin.com/in/akshaykumar</span>
+            </a>
+          </div>
+        </div>
+        
+        <form class="contact__form" id="contactForm">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" placeholder="akshay" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" placeholder="akshay@gmail.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-input form-textarea" id="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span id="btnText">Send Message</span>
+          </button>
+          <p class="form__success" id="formSuccess">Message sent! I'll be in touch soon.</p>
+        </form>
+        
+      </div>
+    </div>
+  </section>
+ 
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">&copy; 2026 Akshay Kumar. Built with ❤ and <code>terraform apply</code></p>
+        <p class="footer__status"><span class="footer__dot"></span> All systems operational</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
